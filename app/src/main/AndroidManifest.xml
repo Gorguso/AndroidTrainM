@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="magisterka.apmagisterka">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- dodane wyzej feature -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StoperActivity" />
+        <activity android:name=".BmiActivity" />
+        <activity android:name=".CwiczeniaActivity" />
+        <activity android:name=".CwiczeniaListaActivity" />
+        <activity android:name=".CwiczOpis" />
+        <activity android:name=".Notepad" />
+        <activity android:name=".ExampleEx" />
+        <activity android:name=".ExampleListaActivity" />
+        <activity android:name=".ExampleOpis"></activity>
+    </application>
+
+</manifest>

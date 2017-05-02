@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Komórkowy trener</string>
+    <string name="textV1">Witaj w aplikacji</string>
+    <string name="exitButton">Wyjscie</string>
+    <string name="textV2">Dostępne opcje :</string>
+    <string name="stoperButton">Stoper</string>
+    <string name="buttonStoperReset">Resetuj</string>
+    <string name="buttonStoperStop">Zatrzymaj</string>
+    <string name="buttonStoperStart">Start</string>
+    <string name="buttonStoperBack">Wroc</string>
+    <string name="buttonCwiczenia">Cwiczenia</string>
+    <string name="buttonZdjecie">Zrób zdjęcie</string>
+    <string name="buttonBmi">Kalkulator BMI</string>
+    <string name="buttonBmiOblicz">Oblicz BMI</string>
+    <string name="bmiText">Kalkulator Body Mass Index</string>
+    <string name="bmiWeight">Waga (kg) :</string>
+    <string name="bmiHeight">Wzrost (cm) :</string>
+    <string name="bmiResultHint">Twój wynik</string>
+    <string name="interpretationBmi">Interpretacja</string>
+    <string name="buttonPrzyklady">Przykładowe treningi</string>
+    <string name="cwiczenia_logo">Logo cwiczenia</string>
+    <string name="notatnik">Notatnik</string>
+
+    <string-array name="lista_cwiczen_array">
+        <item>Klatka piersiowa</item>
+        <item>Barki</item>
+        <item>Plecy</item>
+        <item>Triceps</item>
+        <item>Biceps</item>
+        <item>Brzuch</item>
+        <item>Nogi</item>
+    </string-array>
+
+    <string-array name="lista_examples_array">
+        <item>Poczatkujacy</item>
+        <item>Zaawansowany</item>
+        <item>Cardio</item>
+        <item>Rozgrzewka</item>
+        <item>Wskazowki</item>
+    </string-array>
+
+
+</resources>

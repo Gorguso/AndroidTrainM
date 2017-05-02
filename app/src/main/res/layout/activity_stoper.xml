@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="magisterka.apmagisterka.StoperActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_stoper"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60sp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonStoperBack"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickStoperFinish"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_stoper_button"
+        android:onClick="onStoperClickStart"
+        android:text="@string/buttonStoperStart"
+
+        android:layout_above="@+id/stop_stoper_button"
+        android:layout_alignLeft="@+id/stop_stoper_button"
+        android:layout_alignStart="@+id/stop_stoper_button"
+        android:layout_alignRight="@+id/stop_stoper_button"
+        android:layout_alignEnd="@+id/stop_stoper_button" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop_stoper_button"
+        android:onClick="onStoperClickStop"
+        android:text="@string/buttonStoperStop"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_stoper_button"
+        android:onClick="onStoperClickReset"
+        android:text="@string/buttonStoperReset"
+        android:layout_below="@+id/stop_stoper_button"
+        android:layout_alignLeft="@+id/stop_stoper_button"
+        android:layout_alignStart="@+id/stop_stoper_button"
+        android:layout_alignRight="@+id/stop_stoper_button"
+        android:layout_alignEnd="@+id/stop_stoper_button" />
+
+
+
+</RelativeLayout>
