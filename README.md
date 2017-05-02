@@ -15,6 +15,7 @@ Database with examples of training plan
 Feature that allow to take picture by app
 (maybe) feature that allow to create your own plan 
 
+TODO in the near future : fill in db!
 
 
 ;)
