@@ -20,6 +20,7 @@
     <string name="buttonPrzyklady">Przykładowe treningi</string>
     <string name="cwiczenia_logo">Logo cwiczenia</string>
     <string name="notatnik">Notatnik</string>
+    <string name="notatkaZapis">Zapisano notatke</string>
 
     <string-array name="lista_cwiczen_array">
         <item>Klatka piersiowa</item>

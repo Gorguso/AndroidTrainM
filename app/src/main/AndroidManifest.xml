@@ -28,10 +28,11 @@
         <activity android:name=".CwiczeniaActivity" />
         <activity android:name=".CwiczeniaListaActivity" />
         <activity android:name=".CwiczOpis" />
-        <activity android:name=".Notepad" />
         <activity android:name=".ExampleEx" />
         <activity android:name=".ExampleListaActivity" />
-        <activity android:name=".ExampleOpis"></activity>
+        <activity android:name=".ExampleOpis" />
+        <activity android:name=".DiaryMain" />
+        <activity android:name=".DiaryActivity"></activity>
     </application>
 
 </manifest>

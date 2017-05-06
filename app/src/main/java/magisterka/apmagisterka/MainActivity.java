@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     //aparat funckjonalny xxf wwef
     public void onClickNotePad(View v)
     {
-        Intent intent = new Intent(this, Notepad.class);
+        Intent intent = new Intent(this, DiaryMain.class);
         startActivity(intent);
     }
 
