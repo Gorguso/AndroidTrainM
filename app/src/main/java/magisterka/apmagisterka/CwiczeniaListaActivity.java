@@ -33,7 +33,7 @@ public class CwiczeniaListaActivity extends ListActivity{
 
 //case na przypadki nacisnienia cwiczenia z odpowiedniej kategori tj A B C D klatka itd databaseSql
         switch (pozycjaListy) {
-            case 0:
+            case 3:
                 try {
                     SQLiteOpenHelper sqLiteOpenHelper = new DatabaseSql(this);
 
@@ -52,7 +52,7 @@ public class CwiczeniaListaActivity extends ListActivity{
                     toast.show();
                 }
                 break;
-            case 1:
+            case 0:
                 try {
                     SQLiteOpenHelper sqLiteOpenHelper = new DatabaseSql(this);
 
@@ -71,7 +71,7 @@ public class CwiczeniaListaActivity extends ListActivity{
                 }
 
                 break;
-            case 2:
+            case 5:
                 try {
                     SQLiteOpenHelper sqLiteOpenHelper = new DatabaseSql(this);
 
@@ -89,7 +89,7 @@ public class CwiczeniaListaActivity extends ListActivity{
                     toast.show();
                 }
                 break;
-            case 3:
+            case 6:
                 try {
                     SQLiteOpenHelper sqLiteOpenHelper = new DatabaseSql(this);
 
@@ -107,7 +107,7 @@ public class CwiczeniaListaActivity extends ListActivity{
                     toast.show();
                 }
                 break;
-            case 4:
+            case 1:
                 try {
                     SQLiteOpenHelper sqLiteOpenHelper = new DatabaseSql(this);
 
@@ -125,7 +125,7 @@ public class CwiczeniaListaActivity extends ListActivity{
                     toast.show();
                 }
                 break;
-            case 5:
+            case 2:
                 try {
                     SQLiteOpenHelper sqLiteOpenHelper = new DatabaseSql(this);
 
@@ -143,7 +143,7 @@ public class CwiczeniaListaActivity extends ListActivity{
                     toast.show();
                 }
                 break;
-            case 6:
+            case 4:
                 try {
                     SQLiteOpenHelper sqLiteOpenHelper = new DatabaseSql(this);
 

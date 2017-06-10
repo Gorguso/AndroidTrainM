@@ -95,7 +95,7 @@ public class ExampleListaActivity extends ListActivity {
 
                 sqLiteDatabase = sqLiteOpenHelper.getReadableDatabase(); // ref do bazy danych
 
-                cursor = sqLiteDatabase.query("EXAMPLE", new String[]{"_id", "NAZWA"}, "KATEGORIA = ?", new String[]{"D"}, null, null, "NAZWA DESC"); // kursor do listview zeby pokazalo nazwe cwiczeni
+                cursor = sqLiteDatabase.query("EXAMPLE", new String[]{"_id", "NAZWA"}, "KATEGORIA = ?", new String[]{"D"}, null, null, "NAZWA ASC"); // kursor do listview zeby pokazalo nazwe cwiczeni
                 //kursor pokazuje nazwe cwiczneia w listView
 
                 CursorAdapter cursorAdapter = new SimpleCursorAdapter(this, android.R.layout.simple_list_item_1, cursor, new String[]{"NAZWA"},
@@ -108,7 +108,58 @@ public class ExampleListaActivity extends ListActivity {
             }
 
 
+
+
         }
+
+        else if (pozycjaListy == 4) {
+            try {
+                SQLiteOpenHelper sqLiteOpenHelper = new DatabaseSql(this);
+
+                sqLiteDatabase = sqLiteOpenHelper.getReadableDatabase(); // ref do bazy danych
+
+                cursor = sqLiteDatabase.query("EXAMPLE", new String[]{"_id", "NAZWA"}, "KATEGORIA = ?", new String[]{"E"}, null, null, "NAZWA ASC"); // kursor do listview zeby pokazalo nazwe cwiczeni
+                //kursor pokazuje nazwe cwiczneia w listView
+
+                CursorAdapter cursorAdapter = new SimpleCursorAdapter(this, android.R.layout.simple_list_item_1, cursor, new String[]{"NAZWA"},
+                        new int[]{android.R.id.text1}, 0); // adapter simpleCursorAdapter
+
+                listaExample.setAdapter(cursorAdapter);
+            } catch (SQLiteException ex) {
+                Toast toast = Toast.makeText(this, "Database error cwiczenia lsita activity", Toast.LENGTH_LONG);
+                toast.show();
+            }
+
+
+
+
+        }
+
+// suplementy
+
+        else if (pozycjaListy == 5) {
+            try {
+                SQLiteOpenHelper sqLiteOpenHelper = new DatabaseSql(this);
+
+                sqLiteDatabase = sqLiteOpenHelper.getReadableDatabase(); // ref do bazy danych
+
+                cursor = sqLiteDatabase.query("EXAMPLE", new String[]{"_id", "NAZWA"}, "KATEGORIA = ?", new String[]{"F"}, null, null, "NAZWA ASC"); // kursor do listview zeby pokazalo nazwe cwiczeni
+                //kursor pokazuje nazwe cwiczneia w listView
+
+                CursorAdapter cursorAdapter = new SimpleCursorAdapter(this, android.R.layout.simple_list_item_1, cursor, new String[]{"NAZWA"},
+                        new int[]{android.R.id.text1}, 0); // adapter simpleCursorAdapter
+
+                listaExample.setAdapter(cursorAdapter);
+            } catch (SQLiteException ex) {
+                Toast toast = Toast.makeText(this, "Database error cwiczenia lsita activity", Toast.LENGTH_LONG);
+                toast.show();
+            }
+
+
+
+
+        }
+
         else {
             Toast toast = Toast.makeText(this, "Retypo", Toast.LENGTH_LONG);
             toast.show();

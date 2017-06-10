@@ -90,7 +90,7 @@ public void onClickBmiLicz(View view)
         textViewInterpretacji.setText("Otyłość skrajna");
     }
 
-    textViewWynikBmi.setText(String.format("%.3f",bmiCalc));
+    textViewWynikBmi.setText(String.format("BMI = %.3f",bmiCalc));
 
 
 

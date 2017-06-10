@@ -4,20 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="magisterka.apmagisterka.ExampleEx">
+    tools:context="magisterka.apmagisterka.ExampleEx"
+    android:weightSum="1">
 
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:src="@drawable/cwiczenialogo"
+        android:id="@+id/imageViewExample"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
         android:contentDescription="@string/cwiczenia_logo"
-        android:id="@+id/imageViewExample" />
+        android:src="@drawable/talerzx" />
+
     <ListView
         android:id="@+id/list_options_examples"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/lista_examples_array"
-        />
+        android:layout_height="184dp"
+        android:layout_weight="0.94"
+        android:entries="@array/lista_examples_array" />
 
 </LinearLayout>

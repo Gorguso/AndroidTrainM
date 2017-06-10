@@ -53,7 +53,7 @@ public class DiaryMain extends AppCompatActivity {
 
         if(diaries == null || diaries.size()==0)
         {
-            Toast.makeText(this,"No notes",Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(this,"No notes",Toast.LENGTH_SHORT).show();
         return;
         }else
         {

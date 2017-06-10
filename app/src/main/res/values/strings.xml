@@ -10,34 +10,39 @@
     <string name="buttonStoperBack">Wroc</string>
     <string name="buttonCwiczenia">Cwiczenia</string>
     <string name="buttonZdjecie">Zrób zdjęcie</string>
-    <string name="buttonBmi">Kalkulator BMI</string>
+    <string name="buttonBmi">Oblicz BMI</string>
     <string name="buttonBmiOblicz">Oblicz BMI</string>
     <string name="bmiText">Kalkulator Body Mass Index</string>
     <string name="bmiWeight">Waga (kg) :</string>
     <string name="bmiHeight">Wzrost (cm) :</string>
     <string name="bmiResultHint">Twój wynik</string>
     <string name="interpretationBmi">Interpretacja</string>
-    <string name="buttonPrzyklady">Przykładowe treningi</string>
+    <string name="buttonPrzyklady">Wskazowki</string>
     <string name="cwiczenia_logo">Logo cwiczenia</string>
     <string name="notatnik">Notatnik</string>
     <string name="notatkaZapis">Zapisano notatke</string>
 
     <string-array name="lista_cwiczen_array">
-        <item>Klatka piersiowa</item>
         <item>Barki</item>
-        <item>Plecy</item>
-        <item>Triceps</item>
         <item>Biceps</item>
         <item>Brzuch</item>
+        <item>Klatka piersiowa</item>
         <item>Nogi</item>
+        <item>Plecy</item>
+        <item>Triceps</item>
+
     </string-array>
 
     <string-array name="lista_examples_array">
-        <item>Poczatkujacy</item>
-        <item>Zaawansowany</item>
+
+        <item>Plany treningowe poczatkujacy</item>
+        <item>Plany treningowe zaawansowany</item>
         <item>Cardio</item>
+        <item>Zlote rady</item>
         <item>Rozgrzewka</item>
-        <item>Wskazowki</item>
+        <item>Suplementy</item>
+
+
     </string-array>
 
 

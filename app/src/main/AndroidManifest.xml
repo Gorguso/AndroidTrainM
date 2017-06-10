@@ -16,23 +16,45 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StoperActivity" />
-        <activity android:name=".BmiActivity" />
-        <activity android:name=".CwiczeniaActivity" />
-        <activity android:name=".CwiczeniaListaActivity" />
-        <activity android:name=".CwiczOpis" />
-        <activity android:name=".ExampleEx" />
-        <activity android:name=".ExampleListaActivity" />
-        <activity android:name=".ExampleOpis" />
-        <activity android:name=".DiaryMain" />
-        <activity android:name=".DiaryActivity"></activity>
+        <activity android:name=".StoperActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".BmiActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CwiczeniaActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CwiczeniaListaActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".CwiczOpis"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ExampleEx"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ExampleListaActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ExampleOpis"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".DiaryMain"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".DiaryActivity"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>

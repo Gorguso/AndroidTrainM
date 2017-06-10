@@ -5,8 +5,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +25,7 @@ public class CwiczOpis extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cwicz_opis);
+       // getWindow().getDecorView().setBackgroundColor(Color.BLACK); // zmienia kolor aktywnosci na black
 
         int cwiczenieNr = (Integer)getIntent().getExtras().get(EXERCISE);
 
@@ -49,6 +52,7 @@ public class CwiczOpis extends Activity {
 
                 TextView opisView = (TextView)findViewById(R.id.description);
                 opisView.setText(opis);
+                opisView.setMovementMethod(new ScrollingMovementMethod()); //scroll
 
                 ImageView zdjecieView = (ImageView) findViewById(R.id.photo);
                 zdjecieView.setImageResource(nrZdjecia);

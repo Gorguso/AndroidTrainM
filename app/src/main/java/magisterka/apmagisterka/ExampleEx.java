@@ -46,6 +46,23 @@ public class ExampleEx extends AppCompatActivity {
                         intent.putExtra("pozycja",pozycjaWyjsciowa);
                     startActivity(intent);
                 }
+
+                if(position == 4) // 0 oznacza ze przechodzi do 4 elementu z listy
+                {
+                    pozycjaWyjsciowa= position;
+                    Intent intent = new Intent (ExampleEx.this , ExampleListaActivity.class);// utworzyc cwiczneia lista activity
+                    intent.putExtra("pozycja",pozycjaWyjsciowa);
+                    startActivity(intent);
+                }
+
+                if(position == 5) // 0 oznacza ze przechodzi do 4 elementu z listy // suplementyXXXX
+                {
+                    pozycjaWyjsciowa= position;
+                    Intent intent = new Intent (ExampleEx.this , ExampleListaActivity.class);// utworzyc cwiczneia lista activity
+                    intent.putExtra("pozycja",pozycjaWyjsciowa);
+                    startActivity(intent);
+                }
+
             }
         };
         ListView listView = (ListView) findViewById(R.id.list_options_examples);
