@@ -92,15 +92,15 @@ Diary diary;
         }
         else
         {// usuwanie dialog pytanie
-            AlertDialog.Builder dialog = new AlertDialog.Builder(this).setTitle("Title sure").setMessage("Message title" + diaryTitleText.getText().toString()+"sure?")
-                    .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+            AlertDialog.Builder dialog = new AlertDialog.Builder(this).setTitle("Uwaga!").setMessage("Usunac " + diaryTitleText.getText().toString()+"?")
+                    .setPositiveButton("Tak", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             DiaryTools.removeItem(getApplicationContext(),diarySaved.getDateTime()+DiaryTools.FILE_EXTENSION);
-                            Toast.makeText(getApplicationContext(),"Deleted", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),"Usunieto", Toast.LENGTH_SHORT).show();
                             finish();
                         }
-                    }).setNegativeButton("no",null).setCancelable(false);  //null bo nie musimy obslugiwac tego
+                    }).setNegativeButton("Nie",null).setCancelable(false);  //null bo nie musimy obslugiwac tego
 dialog.show();
 
         }
